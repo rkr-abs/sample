@@ -1,9 +1,15 @@
 import { React } from 'react';
-const Fenders = () =>
-	<div>
-		<div className="Fender1"/>
-		<div className="Fender2"/>
-		<div/>
-	</div>;
+
+const Fenders = ({ fenderSize, fender }) =>
+	<div
+		style={
+			{
+				width: `${ fenderSize }px`,
+				height: `${ fenderSize }px`,
+				position: 'absolute',
+			}
+		}
+		className={ fender }
+	/>;
 
 export default Fenders;

@@ -1,14 +1,13 @@
-/* eslint-disable no-magic-numbers */
-import { peek } from '@laufire/utils/debug';
 import { React } from 'react';
+import Fenders from './Fenders';
 import Rim from './Rim';
 
 const Tire = (tire) => {
 	const { size, x, y } = tire;
 
-	peek(tire);
 	return (
 		<div>
+			<Fenders { ...tire }/>
 			<div
 				style={
 					{
