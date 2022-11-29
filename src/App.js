@@ -1,9 +1,11 @@
 import { React } from 'react';
 import './App.scss';
+import Bus from './components/Bus';
 
-const App = () =>
+const App = (context) =>
 	<div className="App" role="App">
-		Ready to start.
+		<Bus { ...context }/>
+
 	</div>;
 
 export default App;
