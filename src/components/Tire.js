@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 import { peek } from '@laufire/utils/debug';
 import { React } from 'react';
 import Rim from './Rim';
@@ -13,7 +14,7 @@ const Tire = (tire) => {
 					{
 						width: `${ size }px`,
 						height: `${ size }px`,
-						transform: `translate(${ x }px,${ y }px)`,
+						transform: `translate(${ x }%,${ y }%)`,
 						position: 'absolute',
 					}
 				}

@@ -5,7 +5,7 @@ import Tire from './Tire';
 const Tires = (context) => {
 	const { state: { tires }} = context;
 
-	return map(tires, (tire, i) => <div key={ i }> <Tire { ...tire }/></div>);
+	return map(tires, (tire, i) => <Tire key={ i } { ...tire }/>);
 };
 
 export default Tires;

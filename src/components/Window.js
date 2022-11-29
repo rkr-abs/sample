@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 import { React } from 'react';
 
 const Window = (window) => {
@@ -10,7 +11,7 @@ const Window = (window) => {
 				{
 					width: `${ size }px`,
 					height: `${ size }px`,
-					transform: `translate(${ x }px,${ y }px)`,
+					transform: `translate(${ x }%,${ y }px)`,
 					position: 'absolute',
 				}
 			}
