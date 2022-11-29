@@ -1,25 +1,21 @@
 import { React } from 'react';
-import Fenders from './Fenders';
-
+import Rim from './Rim';
 const Tire = (tire) => {
-	const { size, x, y } = tire;
+	const { size } = tire;
 
-	return (
-		<div>
-			<div
-				style={
-					{
-						width: `${ size }px`,
-						height: `${ size }px`,
-						transform: `translate(${ x }%,${ y }%)`,
-						position: 'absolute',
-					}
+	return <div>
+		<div
+			style={
+				{
+					width: `${ size }px`,
+					height: `${ size }px`,
+					position: 'absolute',
 				}
-				className="tire"
-			>
-				<Fenders { ...tire }/>
-			</div>
-		</div>);
+			}
+			className="tire"
+		><Rim/>
+		</div>
+	</div>;
 };
 
 export default Tire;

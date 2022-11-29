@@ -11,7 +11,7 @@ const Window = (window) => {
 				{
 					width: `${ size }px`,
 					height: `${ size }px`,
-					transform: `translate(${ x }%,${ y }px)`,
+					transform: `translate(${ x }%,-${ y }px)`,
 					position: 'absolute',
 				}
 			}

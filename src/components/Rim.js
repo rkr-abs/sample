@@ -1,16 +1,9 @@
 import { React } from 'react';
 
-const Rim = ({ rimSize }) =>
-	<div
-		style={
-			{
-				width: `${ rimSize }px`,
-				height: `${ rimSize }px`,
-				transform: 'translate(50%,50%)',
-				position: 'absolute',
-			}
-		}
-		className="rim"
-	/>;
+const Rim = () =>
+	<div>
+		<div className="rim1"/>
+		<div className="rim2"/>
+	</div>;
 
 export default Rim;

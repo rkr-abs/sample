@@ -1,17 +1,8 @@
+import { map } from '@laufire/utils/collection';
 import { React } from 'react';
-import Rim from './Rim';
-const Fenders = (tire) => {
-	const { fenderSize, fender } = tire;
+import Fender from './Fender';
 
-	return <div>
-		<div
-			style={ {
-				width: `${ fenderSize }px`,
-				height: `${ fenderSize }px`,
-				position: 'absolute',
-			} }
-			className={ fender }
-		><Rim { ...tire }/></div></div>;
-};
+const Fenders = ({ state: { tires }}) =>
+	map(tires, (tire, i) => <Fender key={ i } { ...tire }/>);
 
 export default Fenders;
