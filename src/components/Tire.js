@@ -1,13 +1,11 @@
 import { React } from 'react';
 import Fenders from './Fenders';
-import Rim from './Rim';
 
 const Tire = (tire) => {
 	const { size, x, y } = tire;
 
 	return (
 		<div>
-			<Fenders { ...tire }/>
 			<div
 				style={
 					{
@@ -19,7 +17,8 @@ const Tire = (tire) => {
 				}
 				className="tire"
 			>
-				<Rim { ...tire }/></div>
+				<Fenders { ...tire }/>
+			</div>
 		</div>);
 };
 

@@ -1,15 +1,17 @@
 import { React } from 'react';
+import Rim from './Rim';
+const Fenders = (tire) => {
+	const { fenderSize, fender } = tire;
 
-const Fenders = ({ fenderSize, fender }) =>
-	<div
-		style={
-			{
+	return <div>
+		<div
+			style={ {
 				width: `${ fenderSize }px`,
 				height: `${ fenderSize }px`,
 				position: 'absolute',
-			}
-		}
-		className={ fender }
-	/>;
+			} }
+			className={ fender }
+		><Rim { ...tire }/></div></div>;
+};
 
 export default Fenders;

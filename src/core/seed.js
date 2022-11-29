@@ -4,11 +4,11 @@ const size = 100;
 const fenderName = ['fender1', 'fender2'];
 
 const tires = map(range(1, 3), (number, i) => ({
-	size: size,
-	x: number === 2 ? (number * 300) + 30 : number * 300,
-	y: 350,
+	size: size * 2,
+	x: Math.pow(number, 2) * 110,
+	y: 150,
 	rimSize: size / 2,
-	fenderSize: size * 2,
+	fenderSize: size,
 	fender: fenderName[i],
 }));
 
