@@ -1,6 +1,6 @@
 import { React } from 'react';
 import './App.scss';
-import Bus from './components/Bus';
+import Bus from './components/Bus/';
 
 const App = (context) =>
 	<div className="App" role="App">

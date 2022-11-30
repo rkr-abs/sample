@@ -2,8 +2,9 @@ import { React } from 'react';
 
 const Rim = () =>
 	<div>
-		<div className="rim1"/>
-		<div className="rim2"/>
+		<div className="rim">
+			<i className="gg-bmw"/></div>
+
 	</div>;
 
 export default Rim;

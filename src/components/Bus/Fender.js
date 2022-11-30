@@ -11,7 +11,7 @@ const Fender = (tire) => {
 				style={ {
 					width: `${ fenderSize }px`,
 					height: `${ fenderSize }px`,
-					transform: `translate(${ x }%,-10%)`,
+					transform: `translate(${ x }%,0%)`,
 					position: 'absolute',
 				} }
 				className={ fender }
