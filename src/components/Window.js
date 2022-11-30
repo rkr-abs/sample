@@ -1,4 +1,3 @@
-/* eslint-disable no-magic-numbers */
 import { React } from 'react';
 
 const Window = (window) => {
@@ -7,6 +6,7 @@ const Window = (window) => {
 	return (
 
 		<div
+			className="window"
 			style={
 				{
 					width: `${ size }px`,
@@ -15,7 +15,6 @@ const Window = (window) => {
 					position: 'absolute',
 				}
 			}
-			className="window"
 		/>);
 };
 

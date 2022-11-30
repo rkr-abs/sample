@@ -70,12 +70,12 @@ animation: ram  2s infinite linear;
 }
 @keyframes ram {
 	from{
-		left:15%;
-		top:50%;
+		left:25%;
+		top:25%;
 		transform: rotate(360deg);}
 	to{
-		left:15%;
-		top:50%;
+		left:25%;
+		top:25%;
 		transform: rotate(0deg)}
 
 }
@@ -112,5 +112,42 @@ animation: ram  2s infinite linear;
 	border-radius: 50%;
 	background-color: white;
 	position: absolute;
+	border: 1px solid rgb(0, 0, 0);
+}
+.busName{
+	width: fit-content;
+	height:fit-content;
+	position: absolute;
+	z-index: 1;
+	transform: translate(30%,-130%);
+	color: wheat;
+	text-decoration: solid;
+	text-transform: uppercase;
+	font-size: 80px;
 }
 
+.frontLight,.backLight{
+	width: 10px;
+	height: 50px;
+	position: absolute;
+	border-radius: 50px;
+	background-color: orange;
+	box-shadow: -1px 0px 17px 8px orange;
+	opacity: 0.5;
+}
+.frontLight{
+ transform: translate(-80%,-50%);
+}
+.backLight{
+	transform: translate(1200px,-50%);
+}
+.rearWindow{
+	width: 100px;
+	height: 150px;
+	position: absolute;
+	border: 1px solid black;
+	transform: translate(1080%,-190%);
+	background-color: #87CEEB;
+	border-radius: 50% 10px 10px 50%;
+
+}

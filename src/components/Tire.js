@@ -1,5 +1,6 @@
 import { React } from 'react';
 import Rim from './Rim';
+
 const Tire = (tire) => {
 	const { size } = tire;
 
