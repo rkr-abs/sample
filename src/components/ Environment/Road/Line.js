@@ -9,7 +9,6 @@ const Line = ({ height, width, x, y }) =>
 					width: `${ width }px`,
 					height: `${ height }px`,
 					transform: `translate(${ x }%,${ y }px)`,
-					position: 'absolute',
 				}
 			}
 		/>

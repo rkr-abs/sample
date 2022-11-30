@@ -2,15 +2,22 @@ import { React } from 'react';
 import Tire from './Tire';
 
 const Fender = (tire) => {
-	const { fender } = tire;
+	const { wSize, hSize, fenderLeft, fenderTop } = tire;
 
 	return (
 		<div>
-
 			<div
-				className={ fender }
-			><div className="wheels"><Tire { ...tire }/></div>
-
+				className="fenders"
+				style={
+					{
+						width: `${ wSize }px`,
+						height: `${ hSize }px`,
+						transform: `translate(${ fenderLeft }%,-${ fenderTop }%)`,
+					}
+				}
+			>
+				<div className="wheels"><Tire { ...tire }/>
+				</div>
 			</div>
 		</div>);
 };

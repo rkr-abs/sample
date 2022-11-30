@@ -8,7 +8,6 @@ const Window = ({ size, x, y }) =>
 				width: `${ size }px`,
 				height: `${ size }px`,
 				transform: `translate(${ x }%,-${ y }px)`,
-				position: 'absolute',
 			}
 		}
 	/>;

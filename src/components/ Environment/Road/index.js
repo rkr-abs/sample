@@ -5,7 +5,6 @@ const Road = () =>
 	<div>
 		<div className="road"/>
 		<Lines/>
-
 	</div>;
 
 export default Road;
