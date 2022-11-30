@@ -15,8 +15,8 @@ const Fender = (tire) => {
 					transform: `translate(${ x }%,0%)`,
 					position: 'absolute',
 				} }
-			>
-				<Tire { ...tire }/>
+			><div className="wheels"><Tire { ...tire }/></div>
+
 			</div>
 		</div>);
 };

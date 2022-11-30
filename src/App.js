@@ -1,10 +1,12 @@
 import { React } from 'react';
 import './App.scss';
+import Road from './components/ Environment/Road';
 import Bus from './components/Bus/';
 
-const App = (context) =>
+const App = () =>
 	<div className="App" role="App">
-		<Bus { ...context }/>
+		<Bus/>
+		<Road/>
 	</div>;
 
 export default App;
