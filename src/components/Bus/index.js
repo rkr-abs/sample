@@ -7,13 +7,13 @@ import BusName from './BusName';
 import Lights from './Lights';
 import RearWindow from './RearWindow';
 
-const Bus = (context) =>
+const Bus = () =>
 	<div className="bus">
 		<FrontWindow/>
 		<Door/>
 		<BusName/>
-		<Windows { ...context }/>
-		<Fenders { ...context }/>
+		<Windows/>
+		<Fenders/>
 		<Lights/>
 		<RearWindow/>
 	</div>;

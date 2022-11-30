@@ -8,13 +8,13 @@ const Fender = (tire) => {
 		<div>
 
 			<div
+				className={ fender }
 				style={ {
 					width: `${ fenderSize }px`,
 					height: `${ fenderSize }px`,
 					transform: `translate(${ x }%,0%)`,
 					position: 'absolute',
 				} }
-				className={ fender }
 			>
 				<Tire { ...tire }/>
 			</div>

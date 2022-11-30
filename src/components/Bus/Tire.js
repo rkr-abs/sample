@@ -1,22 +1,18 @@
 import { React } from 'react';
 import Rim from './Rim';
 
-const Tire = (tire) => {
-	const { size } = tire;
-
-	return <div>
-		<div
-			style={
-				{
-					width: `${ size }px`,
-					height: `${ size }px`,
-					position: 'absolute',
-				}
+const Tire = ({ size }) => <div>
+	<div
+		className="tire"
+		style={
+			{
+				width: `${ size }px`,
+				height: `${ size }px`,
+				position: 'absolute',
 			}
-			className="tire"
-		><Rim/>
-		</div>
-	</div>;
-};
+		}
+	><Rim/>
+	</div>
+</div>;
 
 export default Tire;
