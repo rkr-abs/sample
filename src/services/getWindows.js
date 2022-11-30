@@ -1,14 +1,13 @@
-/* eslint-disable no-magic-numbers */
 import { map, range } from '@laufire/utils/collection';
+const five = 5;
+const size = 100;
+const left = 220;
+const top = 250;
 
-const windows = map(range(1, 5), (number) => ({
-	size: 100,
-	x: number * 220,
-	y: 250,
+const getWindows = map(range(1, five), (number) => ({
+	size: size,
+	x: number * left,
+	y: top,
 }));
 
-const getWindow = () => ({
-	windows,
-});
-
-export default getWindow;
+export default getWindows;

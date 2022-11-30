@@ -1,4 +1,5 @@
 import { React } from 'react';
+
 const Lights = () =>
 	<div>
 		<div className="frontLight"/>
