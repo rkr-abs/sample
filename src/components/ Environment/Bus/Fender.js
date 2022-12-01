@@ -12,7 +12,9 @@ const Fender = (tire) => {
 					{
 						width: `${ wSize }px`,
 						height: `${ hSize }px`,
-						transform: `translate(${ fenderLeft }%,-${ fenderTop }%)`,
+						left: `${ fenderLeft }%`,
+						top: `${ fenderTop }%`,
+
 					}
 				}
 			>

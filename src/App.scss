@@ -107,7 +107,8 @@
 .fenders{
 	border-radius: 50% 50% 0 0;
 	background-color: rgba(255, 255, 255, 0.754);
-	position: 'absolute',
+	position: absolute;
+	transform: translate(-50%,-50%);
 }
 
 .rim{
