@@ -7,7 +7,9 @@ const Light = ({ width, height, x, y }) =>
 			{
 				width: `${ width }px`,
 				height: `${ height }px`,
-				transform: `translate(${ x }px,${ y }px)`,
+				top: `${ y }%`,
+				left: `${ x }%`,
+
 			}
 		}
 	/>;

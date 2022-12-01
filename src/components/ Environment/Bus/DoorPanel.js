@@ -7,7 +7,8 @@ const DoorPanel = ({ width, height, x, y }) =>
 			{
 				width: `${ width }px`,
 				height: `${ height }px`,
-				transform: `translate(${ x }%,${ y }%)`,
+				left: `${ x }%`,
+				top: `${ y }%`,
 			}
 		}
 	/>;

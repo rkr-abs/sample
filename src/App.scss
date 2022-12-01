@@ -1,5 +1,20 @@
 .App {
-	text-align: center;
+
+	.square{
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		border: 1px solid black;
+	}
+	.square1{
+		position: absolute;
+		top: 40%;
+		left: 5%;
+		transform: translate(-50%,-50%);
+		border: 1px solid black;
+	}
 
 	button {
 		font-weight: bold;
@@ -17,19 +32,22 @@
 		}
 	}
 
+
 }
 .bus{
 	width:1200px;
 	height: 400px;
 	position: absolute;
-	transform: translate(50%,10%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	border: 1px solid black;
 	border-radius: 190px 30px 20px 20px;
 	background-color: #000000;
 	z-index: 10;
 	animation: moveBus 20s infinite linear;
 }
-@keyframes moveBus {
+@keyframes oveBus {
 	0%{
 		transform: translate(900px,30px);
 	}
@@ -51,7 +69,7 @@
 	width: 125px;
 	height: 350px;
 	border: 1px solid #000000;
-	transform: translate(75%,10%);
+	transform: translate(70%,10%);
 	background-color: rgb(184, 162, 162);
 	border-radius: 10px ;
 	opacity: 0.9;
@@ -60,14 +78,18 @@
 	position: absolute;
 	background-color: black;
   border-radius: 10px;
+	transform: translate(-50%,-50%);
+
 }
 
 .frontWindow{
 	width: 90px;
 	height: 150px;
+	top: 40%;
+	left:3%;
 	position: absolute;
 	border: 1px solid black;
-	transform: translate(0%,50%);
+	transform: translate(-50%,-50%);
 	background-color: #67C7EB;
 	border-radius: 50% 10px 10px 30px;
 }
@@ -173,6 +195,9 @@
 	background-color: orange;
 	box-shadow: -1px 0px 17px 8px orange;
 	opacity: 0.5;
+	top:50%;
+	left: 100%;
+	transform: translate(-50%,-50%);
 }
 
 .tire{
