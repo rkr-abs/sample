@@ -99,9 +99,10 @@
 	position: absolute;
 	border: 1px solid black;
 	background-color: #87CEEB;
-	transform: translate(1075%,-420%);
+	top: 40%;
+	left: 95%;
+	transform: translate(-50%,-50%);
 	border-radius: 100% 10px 10px 100%;
-	z-index: 1;
 }
 
 .fenders{
@@ -129,11 +130,11 @@
 	from{
 
 		left:5%;
-		top:5%;
+		top:10%;
 		transform: rotate(360deg);}
 	to{
 		left:5%;
-		top:5%;
+		top: 10%;
 		transform: rotate(0deg)}
 
 }
@@ -201,14 +202,20 @@
 	left: 100%;
 	transform: translate(-50%,-50%);
 }
-
+.rim,.bmw,.wheelDisc{
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+}
 .tire{
 	width: 150px;
 	height: 150px;
 	border: 1px solid red;
 	border-radius: 50%;
 	position: absolute;
-	transform: translate(5%,10%);
+	transform: translate(-50%,-50%);
+	top: 119%;
+	left: 50%;
 	background-color: black;
 	animation: rotateWheel  2s infinite linear;
 }
