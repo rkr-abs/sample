@@ -1,7 +1,8 @@
 import { React } from 'react';
 
 const BusName = () =>
-	<div className="busName">
-		Sundhara Travels</div>;
+	<marquee className="busName">
+		Sundhara Travels
+	</marquee>;
 
 export default BusName;
