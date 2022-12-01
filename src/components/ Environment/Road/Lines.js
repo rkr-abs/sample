@@ -1,9 +1,9 @@
 import { map } from '@laufire/utils/collection';
 import { React } from 'react';
-import getLines from '../../../services/getLines';
+import lines from '../../../services/lines';
 import Line from './Line';
 
-const Lines = () => map(getLines, (line, i) =>
+const Lines = () => map(lines, (line, i) =>
 	<Line key={ i } { ...line }/>);
 
 export default Lines;

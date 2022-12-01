@@ -5,18 +5,16 @@ import Fenders from './Fenders';
 import Windows from './Windows';
 import BusName from './BusName';
 import RearWindow from './RearWindow';
-import FrontLight from './FrontLight';
-import BackLight from './BackLight';
+import Lights from './Lights';
 
 const Bus = () =>
 	<div className="bus">
 		<FrontWindow/>
-		<FrontLight/>
+		<Lights/>
 		<Door/>
 		<BusName/>
 		<Windows/>
 		<Fenders/>
-		<BackLight/>
 		<RearWindow/>
 	</div>;
 

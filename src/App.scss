@@ -30,7 +30,7 @@
 	z-index: 10;
 	animation: moveBus 20s infinite linear;
 }
-@keyframes moveBus {
+@keyframes oveBus {
 	0%{
 		transform: translate(1000px,30px);
 	}
@@ -173,20 +173,12 @@
 	font-size: 80px;
 }
 
-.frontLight,.backLight{
-	width: 10px;
-	height: 50px;
+.light{
 	position: absolute;
 	border-radius: 50px;
 	background-color: orange;
 	box-shadow: -1px 0px 17px 8px orange;
 	opacity: 0.5;
-}
-.frontLight{
- transform: translate(-80%,-50%);
-}
-.backLight{
-	transform: translate(1200px,-50%);
 }
 
 .wheels{

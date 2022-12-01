@@ -6,11 +6,11 @@ const left = 500;
 const top = 600;
 const hSize = 20;
 
-const getLines = map(range(0, rangeNum), (number) => ({
+const lines = map(range(0, rangeNum), (number) => ({
 	width: wSize,
 	height: hSize,
 	x: number * left,
 	y: top,
 }));
 
-export default getLines;
+export default lines;

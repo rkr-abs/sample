@@ -13,7 +13,7 @@ const fenderTop = 30;
 const wSize = 170;
 const hSize = 70;
 
-const getTires = map(range(1, three), (number, i) => ({
+const tires = map(range(1, three), (number, i) => ({
 	size: size,
 	x: Math.pow(number, two) * left,
 	y: top,
@@ -24,4 +24,4 @@ const getTires = map(range(1, three), (number, i) => ({
 	hSize: hSize,
 }));
 
-export default getTires;
+export default tires;

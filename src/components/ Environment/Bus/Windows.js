@@ -1,9 +1,9 @@
 import { map } from '@laufire/utils/collection';
 import { React } from 'react';
-import getWindows from '../../../services/getWindows';
+import windows from '../../../services/windows';
 import Window from './Window';
 
-const Windows = () => map(getWindows, (window, i) =>
+const Windows = () => map(windows, (window, i) =>
 
 	<Window key={ i } { ...window }/>);
 
