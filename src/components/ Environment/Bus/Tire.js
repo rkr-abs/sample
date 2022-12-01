@@ -1,9 +1,9 @@
 import { React } from 'react';
 import Rim from './Rim';
 
-const Tire = ({ size }) => <div>
+const Tire = ({ size }) =>
 	<div
-		className="tire"
+		className="rim"
 		style={
 			{
 				width: `${ size }px`,
@@ -12,7 +12,6 @@ const Tire = ({ size }) => <div>
 			}
 		}
 	><Rim/>
-	</div>
-</div>;
+	</div>;
 
 export default Tire;

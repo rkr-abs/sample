@@ -5,34 +5,33 @@
 		font-weight: bold;
 	}
 	.road{
-		width: 100%;
+		width: 100vw;
 		height: 400px;
 		border: 1px solid red;
 		position: absolute;
 		transform: translate(0%,100%);
-		background-color: rgb(143, 139, 139);
+		background-color: #343434;
+		.roadLines{
+			background-color: rgb(255, 255, 255);
+			position: absolute;
+		}
 	}
-	.roadLines{
-		background-color: rgb(255, 255, 255);
-		position: absolute;
-	}
+
 }
 .bus{
 	width:1200px;
 	height: 400px;
 	position: absolute;
-	transform: translate(10%,10%);
+	transform: translate(50%,10%);
 	border: 1px solid black;
 	border-radius: 190px 30px 20px 20px;
 	background-color: #000000;
-	// background: rgb(218,31,40);
-	// background: radial-gradient(circle, rgba(218,31,40,1) 0%, rgba(215,187,43,1) 59%, rgba(252,225,84,1) 100%);
 	z-index: 10;
 	animation: moveBus 20s infinite linear;
 }
-@keyframes oveBus {
+@keyframes moveBus {
 	0%{
-		transform: translate(1000px,30px);
+		transform: translate(900px,30px);
 	}
 	25%{
 		transform: translate(500px,30px);
@@ -44,7 +43,7 @@
 		transform: translate(-500px,30px);
 	}
 	100%{
-		transform: translate(-1000px,30px);
+		transform: translate(-900px,30px);
 	}
 
 }
@@ -54,20 +53,15 @@
 	border: 1px solid #000000;
 	transform: translate(75%,10%);
 	background-color: rgb(184, 162, 162);
-	border-radius: 25px 10px 1px ;
+	border-radius: 10px ;
 	opacity: 0.9;
 }
-.leftDoor,.rightDoor{
-	width: 50px;
-	height: 300px;
+.doorPanel{
 	position: absolute;
-  transform: translate(15%, 10%);
 	background-color: black;
   border-radius: 10px;
 }
-.rightDoor{
-  transform: translate(130%, 10%);
-}
+
 .frontWindow{
 	width: 90px;
 	height: 150px;
@@ -83,7 +77,7 @@
 	position: absolute;
 	border: 1px solid black;
 	background-color: #87CEEB;
-	transform: translate(1075%,-150%);
+	transform: translate(1075%,-420%);
 	border-radius: 100% 10px 10px 100%;
 	z-index: 1;
 }
@@ -94,13 +88,13 @@
 	position: 'absolute',
 }
 
-.tire{
+.rim{
 	border: 1px solid black;
 	background-color: rgb(199, 140, 140);
 	border-radius: 50%;
 	transform: translate(23%, 23%);
 }
-.rim{
+.wheelDisc{
 	width: 50px;
 	height: 50px;
 	transform: translate(50%, 50%);
@@ -120,7 +114,7 @@
 		transform: rotate(0deg)}
 
 }
-.gg-bmw {
+.bmw {
 	position: relative;
 	box-sizing: border-box;
 	display: block;
@@ -130,7 +124,7 @@
 	border: 2px solid;
 	border-radius: 18px
  }
- .gg-bmw::before {
+ .bmw::before {
 	content: "";
 	position: absolute;
 	box-sizing: border-box;
@@ -181,7 +175,7 @@
 	opacity: 0.5;
 }
 
-.wheels{
+.tire{
 	width: 150px;
 	height: 150px;
 	border: 1px solid red;

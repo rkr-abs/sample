@@ -16,7 +16,7 @@ const Fender = (tire) => {
 					}
 				}
 			>
-				<div className="wheels"><Tire { ...tire }/>
+				<div className="tire"><Tire { ...tire }/>
 				</div>
 			</div>
 		</div>);

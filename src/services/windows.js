@@ -4,10 +4,10 @@ const size = 100;
 const left = 220;
 const top = 250;
 
-const windows = map(range(1, five), (number) => ({
+const windows = map(range(1, five), (number, i) => ({
 	size: size,
 	x: number * left,
-	y: top,
+	y: (i * size) + top,
 }));
 
 export default windows;
