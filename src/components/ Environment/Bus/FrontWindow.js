@@ -1,8 +1,6 @@
 import { React } from 'react';
 
 const FrontWindow = () =>
-	<div className="frontWindow">
-		<div className="roof"/>
-	</div>;
+	<div className="frontWindow"/>;
 
 export default FrontWindow;

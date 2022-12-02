@@ -6,10 +6,12 @@ import Windows from './Windows';
 import BusName from './BusName';
 import RearWindow from './RearWindow';
 import Lights from './Lights';
+import Roof from './Roof';
 
 const Bus = () =>
 	<div className="bus">
 		<FrontWindow/>
+		<Roof/>
 		<Lights/>
 		<Door/>
 		<BusName/>
