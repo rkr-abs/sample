@@ -1,10 +1,10 @@
 import { map, range } from '@laufire/utils/collection';
 
-const rangeNum = 10;
-const wSize = 40;
-const left = 500;
-const top = 180;
-const hSize = 20;
+const rangeNum = 5;
+const wSize = 14;
+const left = 20;
+const top = 50;
+const hSize = 4;
 
 const lines = map(range(0, rangeNum), (number) => ({
 	width: wSize,

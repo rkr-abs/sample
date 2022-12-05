@@ -6,7 +6,7 @@ const fenderDiff = 60;
 const fenderLeft = 30;
 const fenderTop = 90;
 const tiresTop = 100;
-const wSize = 18;
+const wSize = 14;
 const hSize = 18;
 
 const tires = map(range(1, three), (number, i) => ({

@@ -5,9 +5,10 @@ const Line = ({ height, width, x, y }) =>
 		className="roadLines"
 		style={
 			{
-				width: `${ width }px`,
-				height: `${ height }px`,
-				transform: `translate(${ x }%,${ y }px)`,
+				width: `${ width }%`,
+				height: `${ height }%`,
+				top: `${ y }%`,
+				left: `${ x }%`,
 			}
 		}
 	/>;

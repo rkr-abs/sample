@@ -1,6 +1,7 @@
 import { map, range } from '@laufire/utils/collection';
+
 const five = 4;
-const height = 15;
+const height = 30;
 const width = 10;
 const left = 30;
 const top = 40;
