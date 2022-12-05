@@ -8,11 +8,7 @@
 	}
 
 	.bus {
-		width: 60%;
-		height: 40%;
 		position: absolute;
-		top: 50%;
-		left: 50%;
 		transform: translate(-50%, -50%);
 		border: 1px solid black;
 		border-radius: 190px 30px 20px 20px;
@@ -281,7 +277,7 @@
 
 }
 
-@keyframes moveBus {
+@keyframes oveBus {
 	0% {
 		transform: translate(900px, 0px);
 	}
