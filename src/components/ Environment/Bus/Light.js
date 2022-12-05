@@ -5,8 +5,8 @@ const Light = ({ width, height, x, y }) =>
 		className="light"
 		style={
 			{
-				width: `${ width }px`,
-				height: `${ height }px`,
+				width: `${ width }%`,
+				height: `${ height }%`,
 				top: `${ y }%`,
 				left: `${ x }%`,
 

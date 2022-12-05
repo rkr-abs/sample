@@ -1,12 +1,12 @@
 import { React } from 'react';
 
-const Window = ({ size, x, y }) =>
+const Window = ({ width, height, x, y }) =>
 	<div
 		className="window"
 		style={
 			{
-				width: `${ size }px`,
-				height: `${ size }px`,
+				width: `${ width }%`,
+				height: `${ height }%`,
 				top: `${ y }%`,
 				left: `${ x }%`,
 			}

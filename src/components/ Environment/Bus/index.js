@@ -7,6 +7,7 @@ import BusName from './BusName';
 import RearWindow from './RearWindow';
 import Lights from './Lights';
 import Roof from './Roof';
+import Tires from './Tires';
 
 const Bus = () =>
 	<div className="bus">
@@ -17,6 +18,7 @@ const Bus = () =>
 		<BusName/>
 		<Windows/>
 		<Fenders/>
+		<Tires/>
 		<RearWindow/>
 	</div>;
 

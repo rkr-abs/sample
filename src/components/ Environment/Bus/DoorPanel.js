@@ -5,8 +5,8 @@ const DoorPanel = ({ width, height, x, y }) =>
 		className="doorPanel"
 		style={
 			{
-				width: `${ width }px`,
-				height: `${ height }px`,
+				width: `${ width }%`,
+				height: `${ height }%`,
 				left: `${ x }%`,
 				top: `${ y }%`,
 			}
