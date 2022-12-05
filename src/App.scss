@@ -1,132 +1,155 @@
 .App {
+	width: 100vw;
+	height: 100vh;
+	background-color: #F2D2FF;
 
 	button {
 		font-weight: bold;
 	}
-	.bus{
-		width:60%;
-		height: 50%;
+
+	.bus {
+		width: 60%;
+		height: 40%;
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%);
 		border: 1px solid black;
 		border-radius: 190px 30px 20px 20px;
-		background-color: #000000;
+		background-color: #4A5286;
 		z-index: 10;
-		animation: moveBus 20s infinite linear;
-		.frontWindow{
+		animation: moveBus 10s infinite linear;
+
+		.sideMirror {
+			width: 20%;
+			height: 300%;
+			border: 1px solid black;
+			border-radius: 20px;
+			background-color: rgb(176, 232, 254);
+			transform: translate(-50%, 20%);
+
+		}
+
+		.mirrorHandlebar {
+			width: 10%;
+			height: 5%;
+			border: 1px solid black;
+			border-radius: 90% 20px 20px 20px;
+			transform: translate(-20%, 150%);
+			background-color: #000000;
+		}
+
+		.frontWindow {
 			width: 8%;
 			height: 40%;
 			top: 40%;
-			left:3%;
+			left: 4%;
 			position: absolute;
 			border: 1px solid black;
-			transform: translate(-50%,-50%);
-			background-color: #67C7EB;
-			border-radius: 50% 10px 10px 30px;
+			transform: translate(-50%, -50%);
+			background-color: #d3d7f3;
+			border-radius: 80% 10px 10px 10px;
 		}
-		.roof{
-			width:70%;
+
+		.roof {
+			width: 70%;
 			height: 5%;
-			border: 1px solid ;
+			border: 1px solid;
 			position: absolute;
 			top: 0;
 			left: 60%;
-			transform:translate(-50%,-50%);
+			transform: translate(-50%, -50%);
 			background-color: aliceblue;
 			border-radius: 125px 150px 0 0px;
 		}
-		.light{
+
+		.light {
 			position: absolute;
 			border-radius: 50px;
 			background-color: orange;
 			box-shadow: -1px 0px 17px 8px orange;
 			opacity: 0.5;
-			top:50%;
+			top: 50%;
 			left: 100%;
-			transform: translate(-50%,-50%);
+			transform: translate(-50%, -50%);
 		}
-		.door{
+
+		.door {
 			width: 12%;
 			height: 80%;
 			border: 1px solid #000000;
 			top: 50%;
 			left: 15%;
 			position: absolute;
-			transform: translate(-50%,-50%);
+			transform: translate(-50%, -50%);
 			background-color: rgb(184, 162, 162);
-			border-radius: 10px ;
+			border-radius: 10px;
 			opacity: 0.9;
-			.doorPanel{
+
+			.doorPanel {
 				position: absolute;
 				background-color: black;
 				border-radius: 10px;
-				transform: translate(-50%,-50%);
+				transform: translate(-50%, -50%);
 
 			}
 		}
-		.busName{
+
+		.busName {
 			width: fit-content;
-			height:fit-content;
+			height: fit-content;
 			position: absolute;
 			top: 70%;
-			left:50%;
-			transform: translate(-50%,-50%);
+			left: 50%;
+			transform: translate(-50%, -50%);
 			color: wheat;
 			text-decoration: solid;
 			text-transform: uppercase;
 			font-size: 80px;
 		}
-		.window{
+
+		.window {
 			border: 1px solid black;
 			border-radius: 10px;
-			background-color:#87CEEB ;
+			background-color: #d3d7f3;
 			position: absolute;
-			transform: translate(-50%,-50%);
+			transform: translate(-50%, -50%);
 		}
-		.fenders{
+
+		.fenders {
 			border-radius: 50% 50% 0 0;
 			background-color: rgba(255, 255, 255, 0.754);
 			position: absolute;
-			transform: translate(-50%,-50%);
+			transform: translate(-50%, -50%);
 
 		}
-		.tire{
-			width: 14%;
-			height: 30%;
+
+		.tire {
+			width: 12%;
+			height: 37%;
 			border: 1px solid red;
 			border-radius: 50%;
 			position: absolute;
-			transform: translate(-50%,-50%);
+			transform: translate(-50%, -50%);
 			top: 100%;
 			left: 50%;
 			background-color: black;
-			animation: rotateWheel  2s infinite linear ;
 
-			@keyframes otateWheel {
-				from{
-
-
-					transform: rotate(0);}
-				to{
-
-					transform: rotate(360deg);}
-
-			}
-			.rim{
+			.rim {
 				border: 1px solid black;
 				background-color: rgb(199, 140, 140);
 				border-radius: 50%;
 				transform: translate(23%, 23%);
+
 			}
-			.wheelDisc{
+
+			.wheelDisc {
 				width: 50%;
 				height: 50%;
 				transform: translate(-50%, -50%);
 				position: absolute;
 				background-color: rgb(255, 255, 255);
-				border-radius: 50% ;
+				border-radius: 50%;
 
 				.bmw {
 					position: relative;
@@ -136,8 +159,11 @@
 					height: 70%;
 					border: 1px solid;
 					border-radius: 50%;
-				 }
-				 .bmwLogo{
+					animation: rotateWheel 2s infinite linear;
+
+				}
+
+				.bmwLogo {
 					width: 50%;
 					height: 50%;
 					position: absolute;
@@ -148,74 +174,148 @@
 					left: 30%;
 
 					border-radius: 50% 10% 0 10%;
-				 }
+				}
 			}
-			.rim,.bmw,.wheelDisc{
-				transform: translate(-50%,-50%);
+
+			.rim,
+			.bmw,
+			.wheelDisc {
+				transform: translate(-50%, -50%);
 				top: 50%;
 				left: 50%;
 			}
 		}
-		.rearWindow{
+
+		.rearWindow {
 			width: 10%;
 			height: 50%;
 			position: absolute;
 			border: 1px solid black;
-			background-color: #87CEEB;
+			background-color: #d3d7f3;
 			top: 40%;
 			left: 95%;
-			transform: translate(-50%,-50%);
+			transform: translate(-50%, -50%);
 			border-radius: 100% 10px 10px 100%;
 		}
 	}
 
-	.road{
+	.road {
 		width: 100vw;
 		height: 50vh;
 		border: 1px solid red;
 		position: absolute;
-		transform: translate(0%,100%);
+		transform: translate(0%, 100%);
 		background-color: #343434;
-		.roadLines{
+
+		.roadLines {
 			background-color: rgb(255, 255, 255);
 			position: absolute;
+			transform: translate(-50%, -50%);
+
 		}
+
+		.lightBase {
+			height: 50px;
+			width: 30px;
+			border: 1px solid black;
+			background-color: black;
+			position: absolute;
+			border-radius: 50% 50% 0 0;
+			top: 90%;
+			left: 100px;
+			z-index: 2;
+
+			.pole {
+				height: 300px;
+				position: absolute;
+				top: -300px;
+				left: 12px;
+				border-radius: 0% 100% 0 0;
+				border: 3px solid black;
+				background-color: black;
+			z-index: 20;
+
+			}
+			.armOfLight{
+				height: 80px;
+				width: 2px;
+				position: absolute;
+				transform: rotate(90deg);
+				border: 1px solid black;
+				background-color: black;
+				border-radius: 100% 0% 0 100%;
+				left: 36px;
+				top: -43px;
+			z-index: 20;
+
+
+			}
+			.bulb {
+				height: 10px;
+				width: 50px;
+				background-color: white;
+				position: absolute;
+				top: -8px;
+				left: 55px;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+			z-index: 20;
+
+			}
+
+			.light {
+				border-bottom: 290px solid rgba(255, 255, 255, .2);
+				border-left: 20px solid transparent;
+				border-right: 110px solid transparent;
+				height: 0;
+				width: 50px;
+				position: absolute;
+				top: -10px;
+				left: 35px;
+				z-index: 20;
+			}
+		}
+
 	}
 
 
 }
 
-@keyframes oveBus {
-	0%{
-		transform: translate(900px,0px);
+@keyframes moveBus {
+	0% {
+		transform: translate(900px, 0px);
 	}
-	25%{
-		transform: translate(500px,0px);
+
+	25% {
+		transform: translate(500px, 0px);
 	}
-	50%{
-		transform: translate(250px,0px);
+
+	50% {
+		transform: translate(250px, 0px);
 	}
-	75%{
-		transform: translate(-500px,0px);
+
+	75% {
+		transform: translate(-500px, 0px);
 	}
-	100%{
-		transform: translate(-900px,0px);
+
+	100% {
+		transform: translate(-900px, 0px);
 	}
 
 }
 
+@keyframes rotateWheel {
+	from {
 
+		top: 15%;
+		left: 15%;
+		transform: rotate(360deg);
+	}
 
+	to {
+		top: 15%;
+		left: 15%;
+		transform: rotate(0deg);
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
+}

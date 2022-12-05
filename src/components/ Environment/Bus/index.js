@@ -8,10 +8,12 @@ import RearWindow from './RearWindow';
 import Lights from './Lights';
 import Roof from './Roof';
 import Tires from './Tires';
+import SideMirror from './SideMirror';
 
 const Bus = () =>
 	<div className="bus">
 		<FrontWindow/>
+		<SideMirror/>
 		<Roof/>
 		<Lights/>
 		<Door/>
