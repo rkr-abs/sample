@@ -11,7 +11,7 @@
 		position: absolute;
 		transform: translate(-50%, -50%);
 		border: 1px solid black;
-		border-radius: 190px 30px 20px 20px;
+		border-radius: 40% 20px 20px 20px;
 		background-color: #4A5286;
 		z-index: 10;
 		animation: moveBus 10s infinite linear;
@@ -27,11 +27,11 @@
 		}
 
 		.mirrorHandlebar {
-			width: 10%;
+			width: 13%;
 			height: 5%;
 			border: 1px solid black;
 			border-radius: 90% 20px 20px 20px;
-			transform: translate(-20%, 150%);
+			transform: translate(-20%, 250%);
 			background-color: #000000;
 		}
 
@@ -39,12 +39,12 @@
 			width: 8%;
 			height: 40%;
 			top: 40%;
-			left: 4%;
+			left: 3%;
 			position: absolute;
 			border: 1px solid black;
 			transform: translate(-50%, -50%);
 			background-color: #d3d7f3;
-			border-radius: 80% 10px 10px 10px;
+			border-radius: 100% 10px 10px 10px;
 		}
 
 		.roof {
@@ -74,7 +74,7 @@
 			width: 12%;
 			height: 80%;
 			border: 1px solid #000000;
-			top: 50%;
+			top: 55%;
 			left: 15%;
 			position: absolute;
 			transform: translate(-50%, -50%);
@@ -121,8 +121,8 @@
 		}
 
 		.tire {
-			width: 12%;
-			height: 37%;
+			width: 10vmin;
+			height: 10vmin;
 			border: 1px solid red;
 			border-radius: 50%;
 			position: absolute;

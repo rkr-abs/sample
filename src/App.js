@@ -1,11 +1,10 @@
 import { React } from 'react';
 import './App.scss';
-import Buses from './components/ Environment/Buses';
 import Road from './components/ Environment/Road/index';
-
-const App = () =>
+import Buses from './components/ Environment/Buses';
+const App = (context) =>
 	<div className="App" role="App">
-		<Buses/>
+		<Buses { ...context }/>
 		<Road/>
 	</div>;
 
