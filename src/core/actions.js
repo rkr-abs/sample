@@ -1,7 +1,7 @@
-import bus from '../services/buses';
+import bus from '../services/bus';
 
 const getBuses = () => ({
-	buses: bus,
+	buses: [bus()],
 });
 const deleteBuses = () => ({
 	buses: [],
@@ -9,6 +9,7 @@ const deleteBuses = () => ({
 const addBus = ({ state: { buses }}) => ({
 	buses: [...buses, bus()],
 });
+
 const actions = { getBuses, deleteBuses, addBus };
 
 export default actions;
