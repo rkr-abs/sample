@@ -15,7 +15,6 @@ const Tire = ({ size, tiresTop, fenderLeft }) =>
 				{
 					width: `${ size }%`,
 					height: `${ size }%`,
-					position: 'absolute',
 				}
 			}
 		><Rim/>

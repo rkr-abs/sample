@@ -137,6 +137,7 @@
 				background-color: rgb(199, 140, 140);
 				border-radius: 50%;
 				transform: translate(23%, 23%);
+				position: absolute;
 
 			}
 
@@ -230,10 +231,11 @@
 				border-radius: 0% 100% 0 0;
 				border: 3px solid black;
 				background-color: black;
-			z-index: 20;
+				z-index: 20;
 
 			}
-			.armOfLight{
+
+			.armOfLight {
 				height: 80px;
 				width: 2px;
 				position: absolute;
@@ -243,10 +245,11 @@
 				border-radius: 100% 0% 0 100%;
 				left: 36px;
 				top: -43px;
-			z-index: 20;
+				z-index: 20;
 
 
 			}
+
 			.bulb {
 				height: 10px;
 				width: 50px;
@@ -256,7 +259,7 @@
 				left: 55px;
 				border-bottom-left-radius: 5px;
 				border-bottom-right-radius: 5px;
-			z-index: 20;
+				z-index: 20;
 
 			}
 

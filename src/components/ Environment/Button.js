@@ -5,11 +5,6 @@ const Button = (context) => {
 
 	return <div>
 		<button
-			onClick={ () => actions.getBuses() }
-		>
-			Click Me!
-		</button>
-		<button
 			onClick={ () => actions.deleteBuses() }
 		>
 			Delete
@@ -17,7 +12,7 @@ const Button = (context) => {
 		<button
 			onClick={ () => actions.addBus(context) }
 		>
-			addBus
+			AddBus
 		</button>
 	</div>;
 };

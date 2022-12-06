@@ -4,7 +4,6 @@ const Fender = (tire) => {
 	const { wSize, hSize, fenderLeft, fenderTop } = tire;
 
 	return (
-
 		<div
 			className="fenders"
 			style={
@@ -13,7 +12,6 @@ const Fender = (tire) => {
 					height: `${ hSize }%`,
 					left: `${ fenderLeft }%`,
 					top: `${ fenderTop }%`,
-
 				}
 			}
 		/>

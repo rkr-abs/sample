@@ -1,15 +1,12 @@
-import bus from '../services/bus';
+import getBuses from '../services/getBuses';
 
-const getBuses = () => ({
-	buses: [bus()],
-});
 const deleteBuses = () => ({
 	buses: [],
 });
-const addBus = ({ state: { buses }}) => ({
-	buses: [...buses, bus()],
+const addBus = (context) => ({
+	buses: getBuses(context),
 });
 
-const actions = { getBuses, deleteBuses, addBus };
+const actions = { deleteBuses, addBus };
 
 export default actions;

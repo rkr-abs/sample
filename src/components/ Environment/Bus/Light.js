@@ -9,7 +9,6 @@ const Light = ({ width, height, x, y }) =>
 				height: `${ height }%`,
 				top: `${ y }%`,
 				left: `${ x }%`,
-
 			}
 		}
 	/>;
