@@ -1,20 +1,19 @@
-/* eslint-disable no-magic-numbers */
-import { map, range } from '@laufire/utils/collection';
+import { rndBetween } from '@laufire/utils/lib';
 
-const rangeNum = 1;
-const wSize = 40;
+// const rangeNum = 2;
+const wSize = 90;
 const left = 40;
-const top = 50;
-const hSize = 40;
+const top = 100;
+const start = 50;
+const hSize = 80;
+const ten = 50;
+const size = Math.random().toFixed(1);
 
-const buses = map(range(0, rangeNum), (number) => ({
-	width: (number * 10) + wSize,
-	height: hSize,
-	// eslint-disable-next-line no-magic-numbers
-	x: (number * 10) + left,
-	// eslint-disable-next-line no-magic-numbers
-	y: (number * 10) + top,
+const bus = () => ({
+	width: wSize * size,
+	height: hSize * size,
+	x: rndBetween(ten, left),
+	y: rndBetween(start, top),
+});
 
-}));
-
-export default buses;
+export default bus;
