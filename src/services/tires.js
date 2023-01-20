@@ -9,7 +9,7 @@ const tiresTop = 100;
 const wSize = 14;
 const hSize = 18;
 
-const tires = map(range(1, three), (number, i) => ({
+const tires = map(range(1, three), (dummy, i) => ({
 	size: size,
 	fenderLeft: (i * fenderDiff) + fenderLeft,
 	fenderTop: fenderTop,

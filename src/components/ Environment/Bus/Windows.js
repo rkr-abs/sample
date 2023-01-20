@@ -4,7 +4,6 @@ import windows from '../../../services/windows';
 import Window from './Window';
 
 const Windows = () => map(windows, (window, i) =>
-
 	<Window key={ i } { ...window }/>);
 
 export default Windows;

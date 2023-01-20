@@ -151,14 +151,11 @@
 
 				.bmw {
 					position: relative;
-					box-sizing: border-box;
-					display: block;
 					width: 70%;
 					height: 70%;
 					border: 1px solid;
 					border-radius: 50%;
 					animation: rotateWheel 2s infinite linear;
-
 				}
 
 				.bmwLogo {
@@ -170,7 +167,6 @@
 					transform: translate(-50%, -50%);
 					top: 30%;
 					left: 30%;
-
 					border-radius: 50% 10% 0 10%;
 				}
 			}
